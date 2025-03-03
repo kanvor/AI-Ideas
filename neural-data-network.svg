@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Pozadie -->
+  <rect width="800" height="600" fill="#f0f0f0"/>
+  
+  <!-- Titulok -->
+  <text x="400" y="30" font-family="Arial" font-size="20" text-anchor="middle" fill="#333">Neurómorfická dátová sieť (statický pohľad)</text>
+  
+  <!-- Legenda -->
+  <g transform="translate(600, 70)">
+    <text x="0" y="0" font-family="Arial" font-size="14" fill="#333">Legenda:</text>
+    
+    <circle cx="10" cy="25" r="8" fill="#3498db"/>
+    <text x="25" y="30" font-family="Arial" font-size="12" fill="#333">Základné dátové jednotky</text>
+    
+    <circle cx="10" cy="50" r="10" fill="#2ecc71"/>
+    <text x="25" y="55" font-family="Arial" font-size="12" fill="#333">Konceptuálne uzly</text>
+    
+    <circle cx="10" cy="75" r="12" fill="#e74c3c"/>
+    <text x="25" y="80" font-family="Arial" font-size="12" fill="#333">Abstraktné uzly</text>
+    
+    <line x1="0" y1="100" x2="20" y2="100" stroke="#666" stroke-width="1"/>
+    <text x="25" y="105" font-family="Arial" font-size="12" fill="#333">Slabé spojenie</text>
+    
+    <line x1="0" y1="125" x2="20" y2="125" stroke="#666" stroke-width="3"/>
+    <text x="25" y="130" font-family="Arial" font-size="12" fill="#333">Silné spojenie</text>
+  </g>
+  
+  <!-- 3D sieť - vrstva 1 (základné dáta) -->
+  <g transform="translate(400, 400)">
+    <!-- Uzly -->
+    <circle cx="-200" cy="50" r="8" fill="#3498db" opacity="0.9"/>
+    <circle cx="-150" cy="-20" r="8" fill="#3498db" opacity="0.9"/>
+    <circle cx="-100" cy="70" r="8" fill="#3498db" opacity="0.9"/>
+    <circle cx="-50" cy="30" r="8" fill="#3498db" opacity="0.9"/>
+    <circle cx="0" cy="-40" r="8" fill="#3498db" opacity="0.9"/>
+    <circle cx="50" cy="60" r="8" fill="#3498db" opacity="0.9"/>
+    <circle cx="100" cy="10" r="8" fill="#3498db" opacity="0.9"/>
+    <circle cx="150" cy="-30" r="8" fill="#3498db" opacity="0.9"/>
+    <circle cx="200" cy="40" r="8" fill="#3498db" opacity="0.9"/>
+    <circle cx="-180" cy="-50" r="8" fill="#3498db" opacity="0.9"/>
+    <circle cx="-80" cy="-60" r="8" fill="#3498db" opacity="0.9"/>
+    <circle cx="20" cy="80" r="8" fill="#3498db" opacity="0.9"/>
+    <circle cx="120" cy="-50" r="8" fill="#3498db" opacity="0.9"/>
+    <circle cx="180" cy="-10" r="8" fill="#3498db" opacity="0.9"/>
+    
+    <!-- Prepojenia -->
+    <line x1="-200" y1="50" x2="-150" y2="-20" stroke="#666" stroke-width="1" opacity="0.6"/>
+    <line x1="-150" y1="-20" x2="-100" y2="70" stroke="#666" stroke-width="2" opacity="0.6"/>
+    <line x1="-100" y1="70" x2="-50" y2="30" stroke="#666" stroke-width="1" opacity="0.6"/>
+    <line x1="-50" y1="30" x2="0" y2="-40" stroke="#666" stroke-width="3" opacity="0.6"/>
+    <line x1="0" y1="-40" x2="50" y2="60" stroke="#666" stroke-width="1" opacity="0.6"/>
+    <line x1="50" y1="60" x2="100" y2="10" stroke="#666" stroke-width="2" opacity="0.6"/>
+    <line x1="100" y1="10" x2="150" y2="-30" stroke="#666" stroke-width="1" opacity="0.6"/>
+    <line x1="150" y1="-30" x2="200" y2="40" stroke="#666" stroke-width="2" opacity="0.6"/>
+    <line x1="-180" y1="-50" x2="-150" y2="-20" stroke="#666" stroke-width="1" opacity="0.6"/>
+    <line x1="-80" y1="-60" x2="0" y2="-40" stroke="#666" stroke-width="2" opacity="0.6"/>
+    <line x1="20" y1="80" x2="50" y2="60" stroke="#666" stroke-width="1" opacity="0.6"/>
+    <line x1="120" y1="-50" x2="150" y2="-30" stroke="#666" stroke-width="2" opacity="0.6"/>
+    <line x1="180" y1="-10" x2="200" y2="40" stroke="#666" stroke-width="1" opacity="0.6"/>
+    <line x1="-100" y1="70" x2="20" y2="80" stroke="#666" stroke-width="2" opacity="0.6"/>
+    <line x1="-80" y1="-60" x2="-180" y2="-50" stroke="#666" stroke-width="1" opacity="0.6"/>
+    <line x1="120" y1="-50" x2="180" y2="-10" stroke="#666" stroke-width="1" opacity="0.6"/>
+  </g>
+  
+  <!-- 3D sieť - vrstva 2 (koncepty) -->
+  <g transform="translate(400, 350)">
+    <!-- Uzly -->
+    <circle cx="-150" cy="0" r="10" fill="#2ecc71" opacity="0.9"/>
+    <circle cx="-50" cy="-30" r="10" fill="#2ecc71" opacity="0.9"/>
+    <circle cx="50" cy="30" r="10" fill="#2ecc71" opacity="0.9"/>
+    <circle cx="150" cy="-10" r="10" fill="#2ecc71" opacity="0.9"/>
+    
+    <!-- Prepojenia medzi konceptami -->
+    <line x1="-150" y1="0" x2="-50" y2="-30" stroke="#666" stroke-width="2" opacity="0.6"/>
+    <line x1="-50" y1="-30" x2="50" y2="30" stroke="#666" stroke-width="3" opacity="0.6"/>
+    <line x1="50" y1="30" x2="150" y2="-10" stroke="#666" stroke-width="2" opacity="0.6"/>
+    <line x1="-150" y1="0" x2="150" y2="-10" stroke="#666" stroke-width="1" opacity="0.6" stroke-dasharray="5,3"/>
+    
+    <!-- Prepojenia s nižšou vrstvou -->
+    <line x1="-150" y1="0" x2="-180" y2="-50" stroke="#666" stroke-width="1" opacity="0.4" transform="translate(0, 50)"/>
+    <line x1="-150" y1="0" x2="-150" y2="-20" stroke="#666" stroke-width="2" opacity="0.4" transform="translate(0, 50)"/>
+    <line x1="-50" y1="-30" x2="-80" y2="-60" stroke="#666" stroke-width="1" opacity="0.4" transform="translate(0, 50)"/>
+    <line x1="-50" y1="-30" x2="0" y2="-40" stroke="#666" stroke-width="2" opacity="0.4" transform="translate(0, 50)"/>
+    <line x1="50" y1="30" x2="50" y2="60" stroke="#666" stroke-width="2" opacity="0.4" transform="translate(0, 50)"/>
+    <line x1="50" y1="30" x2="20" y2="80" stroke="#666" stroke-width="1" opacity="0.4" transform="translate(0, 50)"/>
+    <line x1="150" y1="-10" x2="150" y2="-30" stroke="#666" stroke-width="2" opacity="0.4" transform="translate(0, 50)"/>
+    <line x1="150" y1="-10" x2="180" y2="-10" stroke="#666" stroke-width="1" opacity="0.4" transform="translate(0, 50)"/>
+  </g>
+  
+  <!-- 3D sieť - vrstva 3 (abstrakcie) -->
+  <g transform="translate(400, 250)">
+    <!-- Uzly -->
+    <circle cx="-100" cy="-20" r="12" fill="#e74c3c" opacity="0.9"/>
+    <circle cx="100" cy="20" r="12" fill="#e74c3c" opacity="0.9"/>
+    
+    <!-- Prepojenia medzi abstrakciami -->
+    <line x1="-100" y1="-20" x2="100" y2="20" stroke="#666" stroke-width="3" opacity="0.6"/>
+    
+    <!-- Prepojenia s nižšou vrstvou -->
+    <line x1="-100" y1="-20" x2="-150" y2="0" stroke="#666" stroke-width="2" opacity="0.4" transform="translate(0, 100)"/>
+    <line x1="-100" y1="-20" x2="-50" y2="-30" stroke="#666" stroke-width="2" opacity="0.4" transform="translate(0, 100)"/>
+    <line x1="100" y1="20" x2="50" y2="30" stroke="#666" stroke-width="2" opacity="0.4" transform="translate(0, 100)"/>
+    <line x1="100" y1="20" x2="150" y2="-10" stroke="#666" stroke-width="2" opacity="0.4" transform="translate(0, 100)"/>
+  </g>
+  
+  <!-- Vrstvové označenie -->
+  <text x="50" y="400" font-family="Arial" font-size="14" fill="#666">Vrstva 1: Základné údaje</text>
+  <text x="50" y="350" font-family="Arial" font-size="14" fill="#666">Vrstva 2: Konceptuálne uzly</text>
+  <text x="50" y="250" font-family="Arial" font-size="14" fill="#666">Vrstva 3: Abstraktné koncepty</text>
+</svg>
